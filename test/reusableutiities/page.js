@@ -1,5 +1,3 @@
-import { browser } from '@wdio/globals'
-
 /**
 * main page object containing all methods, selectors and functionality
 * that is shared across all page objects
@@ -28,4 +26,11 @@ export default class Page {
         await selector.clearValue();
         await selector.setValue(value);
     }  
+
+    //Return a random integer between a given range
+    getRandomNumber(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min); 
+    }
 }

@@ -1,4 +1,3 @@
-import { $ } from '@wdio/globals'
 import Pages from '../reusableutiities/page.js';
 
 /**

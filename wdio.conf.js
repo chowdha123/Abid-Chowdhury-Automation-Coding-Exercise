@@ -146,7 +146,12 @@ export const config = {
     // methods to it. If one of them returns with a promise, WebdriverIO will wait until that promise got
     // resolved to continue.
     
-     beforeTest: function () {
+  // before: async () => {
+  //     const chai = await import('chai');
+  //     global.expect = chai.expect;
+  //     global.assert = chai.assert;
+  // },
+  beforeTest: async () => {
     browser.maximizeWindow();
   },
 

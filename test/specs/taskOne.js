@@ -1,5 +1,4 @@
-import { expect } from '@wdio/globals'
-import TaskOne from '../pageobjects/taskOne.page.js'
+import TaskOne from '../pageobjects/taskOne.page.js';
 
 describe('Task One: Form Authentication', () => {
     it('Verify user can login with valid credentials', async () => {
