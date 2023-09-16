@@ -14,7 +14,7 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
-    "wdio:specifictest": "wdio run ./wdio.conf.js --spec='test/specs/taskThree.js'"
+    "wdio:singletest": "wdio run ./wdio.conf.js --spec='test/specs/taskTwo.js'"
   },
   "dependencies": {
     "chai": "^4.3.8"

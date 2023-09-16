@@ -1,5 +1,5 @@
 import TaskThree from '../pageobjects/taskThree.page.js';
-// import { expect } from 'chai';
+
 
 describe('Task Three: Hovers', () => {
     it('Verify user can mousehover over profiles and view profile links', async () => {
