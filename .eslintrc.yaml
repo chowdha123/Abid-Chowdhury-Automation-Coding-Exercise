@@ -1,0 +1,17 @@
+---
+env:
+  browser: true
+  es2021: true
+  node: true
+  mocha: true
+plugins:
+  - wdio
+extends:
+  - eslint:recommended
+  - plugin:wdio/recommended
+parserOptions:
+  ecmaVersion: 13
+  sourceType: module
+globals:
+  $: true
+  browser: true

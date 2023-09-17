@@ -10,11 +10,18 @@
     "@wdio/mocha-framework": "^8.16.3",
     "@wdio/selenium-standalone-service": "^8.15.0",
     "@wdio/spec-reporter": "^8.16.3",
+    "eslint": "^8.49.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-wdio": "^8.8.7",
     "wdio-eslinter-service": "^0.0.4"
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
-    "wdio:singletest": "wdio run ./wdio.conf.js --spec='test/specs/taskTwo.js'"
+    "wdio:singletest": "wdio run ./wdio.conf.js --spec='test/specs/taskTwo.js'",
+    "lint": "npx eslint --fix ./test/**/*.js "
   },
   "dependencies": {
     "chai": "^4.3.8"
